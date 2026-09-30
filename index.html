@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ОСВОД — Автоматизация портов и причалов</title>
-<meta name="description" content="ОСВОД — системы автоматизации для морских портов и причалов: TOS, управление кранами, AGV, IoT-мониторинг, Port Community System, ESG-отчётность.">
+<meta name="description" content="ОСВОД — системы автоматизации для морских портов и причалов: TOS, IoT-мониторинг, Port Community System, цифровой двойник, ESG-отчётность, кибербезопасность.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
@@ -237,29 +237,6 @@
     width: 100%; max-width: 400px; height: auto;
     filter: drop-shadow(0 24px 48px rgba(0,0,0,.3));
   }
-
-  /* ================= ЛОГОТИПЫ КЛИЕНТОВ ================= */
-  .trust {
-    padding: 48px 0;
-    border-bottom: 1px solid var(--line);
-    background: var(--bg);
-  }
-  .trust-label {
-    text-align: center;
-    font-size: 12px; letter-spacing: 3px;
-    color: var(--grey); font-weight: 600;
-    text-transform: uppercase; margin-bottom: 32px;
-  }
-  .trust-logos {
-    display: flex; flex-wrap: wrap; justify-content: center;
-    align-items: center; gap: 64px;
-  }
-  .trust-logos .item {
-    font-size: 22px; font-weight: 900;
-    letter-spacing: 3px; color: var(--grey);
-    opacity: .55; transition: opacity .2s;
-  }
-  .trust-logos .item:hover { opacity: 1; color: var(--navy); }
 
   /* ================= ОБЩИЕ СЕКЦИИ ================= */
   section { padding: 100px 0; }
@@ -628,7 +605,6 @@
     line-height: 1.6;
   }
 
-  /* ===== Ссылка на офисы ===== */
   .offices-cta {
     margin-top: 48px;
     text-align: center;
@@ -733,8 +709,6 @@
     .about-values { grid-template-columns: 1fr; }
     .footer-grid { grid-template-columns: 1fr; }
     .footer-bottom { flex-direction: column; }
-    .trust-logos { gap: 32px; }
-    .trust-logos .item { font-size: 16px; }
   }
 
   /* ================= МОБИЛЬНОЕ МЕНЮ ================= */
@@ -901,21 +875,6 @@
   </div>
 </section>
 
-<!-- ================= TRUST ================= -->
-<div class="trust">
-  <div class="container">
-    <div class="trust-label">Нам доверяют терминалы и портовые администрации</div>
-    <div class="trust-logos">
-      <span class="item">GDAŃSK</span>
-      <span class="item">GDYNIA</span>
-      <span class="item">ROTTERDAM</span>
-      <span class="item">ANTWERP</span>
-      <span class="item">HAMBURG</span>
-      <span class="item">KLAIPĖDA</span>
-    </div>
-  </div>
-</div>
-
 <!-- ================= УСЛУГИ ================= -->
 <section id="services">
   <div class="container">
@@ -938,15 +897,6 @@
 
       <div class="service-card">
         <div class="service-icon">
-          <svg viewBox="0 0 24 24"><path d="M12 2l9 4.9V17L12 22l-9-4.9V6.9L12 2zm0 2.3L5 8v8l7 3.8L19 16V8l-7-3.7z"/></svg>
-        </div>
-        <h3>Управление кранами и AGV</h3>
-        <p>Автоматизация ship-to-shore (STS) и yard-кранов, диспетчеризация AGV и автоматических тягачей уровня L4.</p>
-        <div class="tags"><span>STS</span><span>AGV</span><span>L4 Autonomy</span></div>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon">
           <svg viewBox="0 0 24 24"><path d="M12 2C8 2 4 6 4 10c0 5 8 12 8 12s8-7 8-12c0-4-4-8-8-8zm0 11a3 3 0 110-6 3 3 0 010 6z"/></svg>
         </div>
         <h3>IoT-мониторинг причалов</h3>
@@ -961,6 +911,15 @@
         <h3>Port Community System</h3>
         <p>Единое цифровое окно для агентов, стивидоров, таможни и портовой администрации. Обмен данными в реальном времени.</p>
         <div class="tags"><span>PCS</span><span>EDI</span><span>Single Window</span></div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2l8 4.5v11L12 22l-8-4.5v-11L12 2zm0 2.3L6 7.7v8.6l6 3.4 6-3.4V7.7l-6-3.4zm0 3.2l4 2.2v4.6l-4 2.2-4-2.2V9.9l4-2.2z"/></svg>
+        </div>
+        <h3>Цифровой двойник порта</h3>
+        <p>Виртуальная 3D-копия терминала с потоковыми данными. Симуляция сценариев, планирование расширений, обучение персонала.</p>
+        <div class="tags"><span>Digital Twin</span><span>BIM</span><span>Simulation</span></div>
       </div>
 
       <div class="service-card">
@@ -1272,7 +1231,6 @@
       </div>
     </div>
 
-    <!-- Карточки команды -->
     <h3 class="team-heading">Ключевые специалисты</h3>
     <p class="team-subheading">
       Руководящий состав и ведущие инженеры, отвечающие за проекты ОСВОД в Европе и России.
@@ -1316,7 +1274,6 @@
       </div>
     </div>
 
-    <!-- Ссылка на офисы -->
     <div class="offices-cta">
       <a href="offices.html" class="btn btn-outline">
         Все офисы ОСВОД
@@ -1367,10 +1324,11 @@
       <div class="footer-col">
         <h5>Решения</h5>
         <a href="#services">Terminal Operating System</a>
-        <a href="#services">Управление кранами</a>
         <a href="#services">IoT-мониторинг</a>
         <a href="#services">Port Community System</a>
+        <a href="#services">Цифровой двойник порта</a>
         <a href="#services">ESG-отчётность</a>
+        <a href="#services">Кибербезопасность</a>
       </div>
 
       <div class="footer-col">
